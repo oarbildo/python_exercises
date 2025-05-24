@@ -111,7 +111,17 @@ class TestOperations(unittest.TestCase):
         self.assertEqual(exercises_1.x_less_than_y(4,3), False)
         self.assertEqual(exercises_1.x_less_than_y(3,4), True)
         self.assertEqual(exercises_1.x_less_than_y(0,0), False)
-        
+    
+    def test_compare(self):
+        self.assertEqual(exercises_1.compare(1,2), -1)
+        self.assertEqual(exercises_1.compare(1,1), 0)
+        self.assertEqual(exercises_1.compare(3,2), 1)
+    
+    def test_max_in_list(self):
+        self.assertEqual(exercises_1.max_in_list([]), None)
+        self.assertEqual(exercises_1.max_in_list([-10000,-99999,-50]), -50)
+        self.assertEqual(exercises_1.max_in_list([5555,7,1,10]), 5555)
+        self.assertEqual(exercises_1.max_in_list([-1,0,0,1]), 1)
 
 if __name__ == "__main__":
     unittest.main()

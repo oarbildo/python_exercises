@@ -131,3 +131,17 @@ def x_less_equal_than_y(x,y):
     returns if x is greater or equal than y
     """
     pass
+
+def compare(x,y):
+    """
+    using if statements, return 1 if x is greatr than y, 0 if they are equal or
+    -1 if y is greater than x
+    """
+    pass
+
+def max_in_list(lst):
+    """
+    using for and if statements return the maximum element on the list lst. If these is none
+    return None
+    """
+    pass
